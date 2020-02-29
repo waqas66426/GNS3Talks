@@ -9,10 +9,10 @@ service ssh start
 ssh-keygen -t rsa -P ""
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java8-installer oracle-java8-set-default 
+sudo apt-get install default-jre-headless
 
 nano ~/.bashrc
-export JAVA_HOME="/usr/lib/jvm/java-8-oracle"
+export JAVA_HOME="/usr/lib/jvm/default-java"
 . ~/.bashrc
 
 echo $JAVA_HOME    ### Verification
